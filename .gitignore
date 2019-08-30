@@ -1,0 +1,11 @@
+#Ignore the install disc that is created
+*.rpm
+extra-packages/*
+edcop-packages/*
+
+# OS generated files #
+# ######################
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db

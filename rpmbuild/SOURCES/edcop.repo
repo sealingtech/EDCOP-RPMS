@@ -1,0 +1,6 @@
+[edcop]
+name=Expandable DCO Platform 1.0
+baseurl=http://repos.sealingtech.org/edcop/1.0
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EDCOP
