@@ -15,4 +15,4 @@ EOF
 
 mkdir /root/extra-packages 
 
-yumdownloader -y --destdir=/root/extra-packages kubeadm kubectl kubelet kubernetes-cni
+yumdownloader -y --destdir=/root/extra-packages kubeadm kubectl kubelet kubernetes-cni cri-tools

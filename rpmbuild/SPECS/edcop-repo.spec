@@ -1,6 +1,6 @@
 Name:           edcop-repo
 Version:        1
-Release:        0
+Release:        1
 Summary:        Expandable DCO Platform YUM Repository
 
 Group:          System Environment/Base
