@@ -13,11 +13,7 @@ node {
 
 
   def pwd = pwd()
-  def chart_dir = "$pwd/helm/"
-  def tool_name = "suricata"
-  def container_dir = "$pwd/container/"
-  def custom_image = "images.suricata"
-  def custom_values_url = "http://repos.sealingtech.com/cisco-c240-m5/suricata/values.yaml"
+  def tool_name = "rpms"
   def user_id = ''
   wrap([$class: 'BuildUser']) {
       echo "userId=${BUILD_USER_ID},fullName=${BUILD_USER},email=${BUILD_USER_EMAIL}"
@@ -35,7 +31,12 @@ node {
       sh "make rpms"
   }
 
-    stage('Output of the directory') {
+  stage('Output of the directory') {
       sh "ls -la"
   }
+
+  stage('Current Location on the Docker Container of the files.  To access them you must access the Jenkins container and then copy the files over') {
+      sh "pwd"
+  }
+
 }
