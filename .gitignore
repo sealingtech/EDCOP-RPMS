@@ -1,7 +1,7 @@
 #Ignore the install disc that is created
 *.rpm
-extra-packages/*
-edcop-packages/*
+**/extra-packages
+**/edcop-packages
 
 # OS generated files #
 # ######################
